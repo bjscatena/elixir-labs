@@ -46,10 +46,10 @@ elixir-labs/
 
 ---
 
-## 🛠️ Requisitos
+## 🛠️ Versões
 
-- Elixir >= 1.14
-- Erlang/OTP >= 25
+- Elixir 1.18.4
+- Erlang/OTP 27
 
 ---
 
