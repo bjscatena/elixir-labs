@@ -14,12 +14,13 @@
 | `config/test.exs` | `resources/application-test.properties` |
 | `config/prod.exs` | `resources/application-prod.properties` |
 
-**Como o Elixir sabe qual arquivo usar?**
+### **Como o Elixir sabe qual arquivo usar?**
 No final do `config.exs` tem essa linha:
+
 ```elixir
 # Em config/config.exs
 import_config "#{config_env()}.exs"
-
+```
 
 ## ⚙️ Função `Config.config/3`
 
@@ -53,13 +54,11 @@ config :logger, :console,
   metadata: [:request_id]
 ```
 
-Aqui:
-
 - :logger é a aplicação alvo.
 - :console é o backend ou módulo dentro do logger.
 - O último argumento é uma lista de configurações para aquele módulo.
 
 ## 💡 Observações
-- import Config é necessário para usar config no arquivo.
+- `import Config` é necessário para usar config no arquivo.
 - As configurações são avaliadas em tempo de compilação por padrão.
-- Para variáveis de ambiente em runtime (ex: prod), use System.fetch_env!/1 ou configure em releases.exs
+- Para variáveis de ambiente em runtime (ex: prod), use `System.fetch_env!/1` ou configure em releases.exs
