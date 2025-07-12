@@ -1,0 +1,47 @@
+# Elixir build artifacts
+/_build/
+/deps/
+/erl_crash.dump
+
+# ElixirLS (VSCode extension) settings
+/.elixir_ls/
+
+# Cover and PLT files (Dialyzer)
+.coverage/
+*.plt
+*.plt.*
+
+# Mix local config
+/.mix/
+
+# IEx history
+.iex.exs
+
+# MacOS system files
+.DS_Store
+
+# Linux system files
+*~
+
+# VSCode settings (optional, se quiser ignorar configs pessoais)
+.vscode/
+
+# NPM assets (caso use Phoenix com assets)
+assets/node_modules/
+node_modules/
+
+# Environment secrets (caso configure .env)
+.env
+.env.*
+
+# Umbrella specific
+apps/*/_build/
+apps/*/deps/
+apps/*/.elixir_ls/
+apps/*/.mix/
+
+# Optional: ignore sqlite or other local dbs
+*.sqlite3
+
+# Optional: ignore logs (caso gere arquivos locais de log)
+*.log
